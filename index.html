@@ -1,0 +1,2587 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Games website</title>
+    <link rel="icon" href="./favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"
+      integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Days+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/index-J_tkNP06.css" />
+  </head>
+  <body class="bg-dark text-light">
+    <!-- COMPONENT: Header -->
+    <header
+      id="header"
+      class="bg-dark border-b border-gray-800 fixed w-full left-0 top-0 z-50"
+    >
+      <div class="max-w-7xl mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center space-x-8">
+            <div class="text-primary text-xl font-bold">
+              <i class="fa-solid fa-gamepad mr-2"></i>
+              GameArena
+            </div>
+            <nav class="hidden lg:flex items-center space-x-6">
+              <a
+                href="#hero"
+                class="text-light hover:text-primary transition-colors cursor-pointer"
+                >Home</a
+              >
+              <a
+                href="#latest-games"
+                class="text-light hover:text-primary transition-colors cursor-pointer"
+                >OUR GAMES
+              </a>
+              <a
+                href="#what-we-do"
+                class="text-light hover:text-primary transition-colors cursor-pointer"
+                >What We Do</a
+              >
+              <a
+                href="#team-members"
+                class="text-light hover:text-primary transition-colors cursor-pointer"
+                >Our Team</a
+              >
+              <!-- <a
+                href="#upcoming-tournaments"
+                class="text-light hover:text-primary transition-colors cursor-pointer"
+                >Tournaments</a
+              > -->
+              <a
+                href="#contact"
+                class="text-light hover:text-primary transition-colors cursor-pointer"
+                >Contact Us</a
+              >
+            </nav>
+          </div>
+          <div class="flex items-center space-x-4">
+            <button
+              id="notifications-toggle"
+              type="button"
+              class="header-icon-button text-light hover:text-primary cursor-pointer"
+              aria-label="Notifications"
+              aria-controls="notifications-panel"
+              aria-expanded="false"
+            >
+              <i class="fa-regular fa-bell text-lg" aria-hidden="true"></i>
+              <span class="header-unread-count" id="notifications-count"
+                >3</span
+              >
+            </button>
+            <button
+              id="messages-toggle"
+              type="button"
+              class="header-icon-button text-light hover:text-primary cursor-pointer"
+              aria-label="Messages"
+              aria-controls="messages-panel"
+              aria-expanded="false"
+            >
+              <i class="fa-regular fa-message text-lg" aria-hidden="true"></i>
+              <span class="header-unread-count" id="messages-count">2</span>
+            </button>
+            <section
+              id="notifications-panel"
+              class="header-popover"
+              role="region"
+              aria-labelledby="notifications-title"
+              hidden
+            >
+              <div class="popover-heading">
+                <div>
+                  <p class="popover-eyebrow">GAMEARENA</p>
+                  <h2 id="notifications-title">Notifications</h2>
+                </div>
+                <button
+                  class="popover-close"
+                  type="button"
+                  aria-label="Close notifications"
+                >
+                  <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="popover-toolbar">
+                <span>Recent activity</span>
+                <button
+                  class="popover-mark-read"
+                  type="button"
+                  data-mark-read="notifications"
+                >
+                  Mark all read
+                </button>
+              </div>
+              <div class="popover-list">
+                <button
+                  class="popover-item is-unread"
+                  type="button"
+                  data-unread-item
+                >
+                  <span class="popover-icon"
+                    ><i class="fa-solid fa-trophy" aria-hidden="true"></i
+                  ></span>
+                  <span class="popover-copy"
+                    ><strong>Tournament registration is open</strong
+                    ><span
+                      >Sign up for this week’s arena and claim your spot.</span
+                    ><small>12 minutes ago</small></span
+                  >
+                  <span class="popover-unread-dot" aria-label="Unread"></span>
+                </button>
+                <button
+                  class="popover-item is-unread"
+                  type="button"
+                  data-unread-item
+                >
+                  <span class="popover-icon"
+                    ><i class="fa-solid fa-gamepad" aria-hidden="true"></i
+                  ></span>
+                  <span class="popover-copy"
+                    ><strong>Fresh games just landed</strong
+                    ><span>Take a look at the newest games in the arena.</span
+                    ><small>1 hour ago</small></span
+                  >
+                  <span class="popover-unread-dot" aria-label="Unread"></span>
+                </button>
+                <button
+                  class="popover-item is-unread"
+                  type="button"
+                  data-unread-item
+                >
+                  <span class="popover-icon"
+                    ><i class="fa-solid fa-users" aria-hidden="true"></i
+                  ></span>
+                  <span class="popover-copy"
+                    ><strong>Your squad is waiting</strong
+                    ><span>There’s a new team activity to check out.</span
+                    ><small>Yesterday</small></span
+                  >
+                  <span class="popover-unread-dot" aria-label="Unread"></span>
+                </button>
+              </div>
+              <a class="popover-footer-link" href="#upcoming-tournaments"
+                >Explore tournaments
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+              ></a>
+            </section>
+            <section
+              id="messages-panel"
+              class="header-popover"
+              role="region"
+              aria-labelledby="messages-title"
+              hidden
+            >
+              <div class="popover-heading">
+                <div>
+                  <p class="popover-eyebrow">YOUR SQUAD</p>
+                  <h2 id="messages-title">Messages</h2>
+                </div>
+                <button
+                  class="popover-close"
+                  type="button"
+                  aria-label="Close messages"
+                >
+                  <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="popover-toolbar">
+                <span>Recent chats</span>
+                <button
+                  class="popover-mark-read"
+                  type="button"
+                  data-mark-read="messages"
+                >
+                  Mark all read
+                </button>
+              </div>
+              <div class="popover-list">
+                <button
+                  class="popover-item message-item is-unread"
+                  type="button"
+                  data-unread-item
+                >
+                  <span class="message-avatar">RA</span>
+                  <span class="popover-copy"
+                    ><strong>Raven</strong
+                    ><span>Queue up? We need one more for the squad.</span
+                    ><small>Just now</small></span
+                  >
+                  <span class="popover-unread-dot" aria-label="Unread"></span>
+                </button>
+                <button
+                  class="popover-item message-item is-unread"
+                  type="button"
+                  data-unread-item
+                >
+                  <span class="message-avatar">K</span>
+                  <span class="popover-copy"
+                    ><strong>Kairo</strong><span>GG! Same time tomorrow?</span
+                    ><small>28 minutes ago</small></span
+                  >
+                  <span class="popover-unread-dot" aria-label="Unread"></span>
+                </button>
+                <button
+                  class="popover-item message-item"
+                  type="button"
+                  data-unread-item
+                >
+                  <span class="message-avatar">M</span>
+                  <span class="popover-copy"
+                    ><strong>Mira</strong
+                    ><span>I shared the new team lineup with you.</span
+                    ><small>Yesterday</small></span
+                  >
+                </button>
+              </div>
+              <a class="popover-footer-link" href="#team-members"
+                >Meet the team
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+              ></a>
+            </section>
+            <a
+              href="./sign-in.html"
+              class="hidden lg:block bg-primary btn-shine text-dark px-6 py-2 rounded-lg font-bold hover:bg-primary/80 transition-all cursor-pointer"
+              >Sign In</a
+            >
+            <!-- Mobile Menu Button -->
+            <button
+              id="mobile-menu-btn"
+              class="lg:hidden text-light hover:text-primary cursor-pointer"
+            >
+              <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden lg:hidden bg-dark border-t border-gray-800"
+      >
+        <nav class="max-w-7xl mx-auto px-6 py-4 flex flex-col space-y-4">
+          <a
+            href="#hero"
+            class="mobile-nav-link text-light hover:text-primary transition-colors cursor-pointer py-2"
+            >Home</a
+          >
+          <a
+            href="#latest-games"
+            class="mobile-nav-link text-light hover:text-primary transition-colors cursor-pointer py-2"
+            >OUR GAMES
+          </a>
+          <a
+            href="#what-we-do"
+            class="mobile-nav-link text-light hover:text-primary transition-colors cursor-pointer py-2"
+            >What We Do</a
+          >
+          <a
+            href="#team-members"
+            class="mobile-nav-link text-light hover:text-primary transition-colors cursor-pointer py-2"
+            >Our Team</a
+          >
+          <a
+            href="#upcoming-tournaments"
+            class="mobile-nav-link text-light hover:text-primary transition-colors cursor-pointer py-2"
+            >Tournaments</a
+          >
+          <a
+            href="#contact"
+            class="mobile-nav-link text-light hover:text-primary transition-colors cursor-pointer py-2"
+            >Contact Us</a
+          >
+          <a href="./sign-in.html" class="mobile-nav-link mobile-signin-link"
+            >Sign In <i class="fa-solid fa-arrow-right" aria-hidden="true"></i
+          ></a>
+          <div class="flex flex-col space-y-3 pt-4 border-t border-gray-800">
+            <button
+              class="text-light hover:text-primary cursor-pointer text-left"
+            >
+              <i class="fa-regular fa-bell text-lg mr-2"></i> Notifications
+            </button>
+            <button
+              class="text-light hover:text-primary cursor-pointer text-left"
+            >
+              <i class="fa-regular fa-message text-lg mr-2"></i> Messages
+            </button>
+            <a
+              href="./sign-in.html"
+              class="inline-block bg-primary btn-shine text-dark px-6 py-3 rounded-lg font-bold hover:bg-primary/80 transition-all cursor-pointer text-center"
+              >Sign In</a
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- COMPONENT: Hero Section -->
+      <section
+        id="hero"
+        class="min-h-screen relative bg-cover bg-center md:bg-fixed bg-[linear-gradient(#000000e0,#000000e0),url('./assets/images/hero-bg.jpg')] flex items-center pt-30 pb-16"
+      >
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-0">
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center"
+          >
+            <div class="text-center lg:text-left">
+              <h1
+                class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 leading-tight"
+              >
+                THE ULTIMATE
+                <span class="text-primary block">GAMING</span>
+                EXPERIENCE
+              </h1>
+              <p
+                class="text-sm sm:text-base text-gray-300 mb-6 md:mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0"
+              >
+                Join millions of gamers worldwide in the most competitive
+                eSports tournaments. Experience next-level gaming with
+                cutting-edge technology and endless possibilities.
+              </p>
+              <div
+                class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start"
+              >
+                <a
+                  href="./sign-up.html"
+                  class="bg-primary btn-shine text-dark px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-sm sm:text-base hover:bg-primary/80 transition-all cursor-pointer"
+                >
+                  Start Gaming Now
+                </a>
+                <a
+                  href="#upcoming-tournaments"
+                  class="border-2 border-primary btn-shine text-primary px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-sm sm:text-base hover:bg-primary hover:text-dark transition-all cursor-pointer"
+                >
+                  Watch Tournaments
+                </a>
+              </div>
+            </div>
+            <div class="relative mt-8 lg:mt-0">
+              <div
+                class="bg-linear-to-r from-primary to-green-400 p-1 rounded-2xl"
+              >
+                <img
+                  class="w-full h-64 sm:h-80 md:h-96 object-cover rounded-xl"
+                  src="./imges/hero-img-C0b4IWtS.png"
+                  alt="professional esports player gaming setup with RGB keyboard, gaming chair, multiple monitors"
+                />
+              </div>
+              <div
+                class="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 bg-dark border border-gray-700 p-4 sm:p-6 rounded-lg shadow-xl"
+              >
+                <div class="flex items-center space-x-3 sm:space-x-4">
+                  <i
+                    class="fa-solid fa-trophy text-primary text-lg sm:text-xl"
+                  ></i>
+                  <div>
+                    <p class="text-xs text-gray-400">Active Players</p>
+                    <p class="text-lg sm:text-xl font-bold">2.5M+</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMPONENT: Latest Games Section -->
+      <section id="latest-games" class="py-16 md:py-24 bg-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+          <div class="text-center mb-12 md:mb-16">
+            <p
+              class="text-primary font-bold tracking-[0.2em] mb-4 text-sm md:text-base relative inline-block before:content-[''] before:absolute before:left-[-40px] sm:before:left-[-80px] before:top-1/2 before:-translate-y-1/2 before:w-8 sm:before:w-16 before:h-[2px] before:bg-linear-to-r before:from-transparent before:via-primary before:to-primary after:content-[''] after:absolute after:right-[-40px] sm:after:right-[-80px] after:top-1/2 after:-translate-y-1/2 after:w-8 sm:after:w-16 after:h-[2px] after:bg-linear-to-l after:from-transparent after:via-primary after:to-primary"
+            >
+              OUR GAMES
+            </p>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold">
+              Our Latest Games
+            </h2>
+          </div>
+
+          <div class="relative">
+            <div id="games-carousel-wrapper" class="overflow-hidden">
+              <div
+                id="games-carousel"
+                class="flex transition-transform duration-500 ease-in-out -mx-4"
+              >
+                <!-- Slide 1 -->
+                <div
+                  class="carousel-item w-full md:w-1/2 lg:w-1/3 shrink-0 px-4"
+                >
+                  <div
+                    class="group relative aspect-4/3 rounded-2xl overflow-hidden cursor-pointer"
+                  >
+                    <img
+                      class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
+                      src="./imges/latest-games-1-CfV33bjK.png"
+                      alt="two cute green alien creatures standing on a desolate planet with a green nebula in the background, 3D render, vibrant, detailed"
+                    />
+                    <!-- Gradient Overlay - shorter height -->
+                    <div
+                      class="absolute bottom-0 left-0 right-0 h-2/3 bg-linear-to-t from-primary/80 via-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    ></div>
+                    <!-- Tags - top left, slide down -->
+                    <div
+                      class="absolute -top-8 left-4 flex items-center space-x-2 group-hover:top-4 transition-[top] duration-300"
+                    >
+                      <span
+                        class="bg-black/50 text-light text-xs font-bold px-3 py-1 rounded-full backdrop-blur-sm flex items-center"
+                        ><i class="fa-solid fa-gamepad mr-2 text-primary"></i
+                        >ADVENTURE</span
+                      >
+                      <span
+                        class="bg-black/50 text-light text-xs font-bold px-3 py-1 rounded-full backdrop-blur-sm flex items-center"
+                        ><i class="fa-solid fa-users mr-2 text-primary"></i
+                        >MULTIPLAYER</span
+                      >
+                    </div>
+                    <!-- Heading - bottom, slide up -->
+                    <div
+                      class="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+                    >
+                      <h3 class="font-bold text-dark font-chakra text-lg">
+                        Alien Companions
+                      </h3>
+                    </div>
+                    <div
+                      class="absolute inset-0 border-2 border-transparent group-hover:border-primary rounded-2xl transition-all duration-300 pointer-events-none"
+                    ></div>
+                  </div>
+                </div>
+                <!-- Slide 2 -->
+                <div
+                  class="carousel-item w-full md:w-1/2 lg:w-1/3 shrink-0 px-4"
+                >
+                  <div
+                    class="group relative aspect-4/3 rounded-2xl overflow-hidden cursor-pointer"
+                  >
+                    <img
+                      class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
+                      src="./imges/latest-games-2-DcGt1MOH.png"
+                      alt="futuristic red hover car racing through a glowing green data tunnel, motion blur, cyberpunk style, cinematic lighting"
+                    />
+                    <!-- Gradient Overlay - shorter height -->
+                    <div
+                      class="absolute bottom-0 left-0 right-0 h-1/2 bg-linear-to-t from-primary/80 via-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    ></div>
+                    <!-- Tags - top left, slide down -->
+                    <div
+                      class="absolute -top-8 left-4 flex items-center space-x-2 group-hover:top-4 transition-[top] duration-300"
+                    >
+                      <span
+                        class="bg-black/50 text-light text-xs font-bold px-3 py-1 rounded-full backdrop-blur-sm flex items-center"
+                        ><i
+                          class="fa-solid fa-flag-checkered mr-2 text-primary"
+                        ></i
+                        >RACING</span
+                      >
+                      <span
+                        class="bg-black/50 text-light text-xs font-bold px-3 py-1 rounded-full backdrop-blur-sm flex items-center"
+                        ><i class="fa-solid fa-bolt mr-2 text-primary"></i
+                        >SCI-FI</span
+                      >
+                    </div>
+                    <!-- Heading - bottom, slide up -->
+                    <div
+                      class="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+                    >
+                      <h3 class="font-bold text-dark font-chakra text-lg">
+                        Cyber Run 2099
+                      </h3>
+                    </div>
+                    <div
+                      class="absolute inset-0 border-2 border-transparent group-hover:border-primary rounded-2xl transition-all duration-300 pointer-events-none"
+                    ></div>
+                  </div>
+                </div>
+                <!-- Slide 3 -->
+                <div
+                  class="carousel-item w-full md:w-1/2 lg:w-1/3 shrink-0 px-4"
+                >
+                  <div
+                    class="group relative aspect-4/3 rounded-2xl overflow-hidden cursor-pointer"
+                  >
+                    <img
+                      class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
+                      src="./imges/latest-games-3-3PuaZ95E.png"
+                      alt="massive alien mothership hovering over a lush green planet with smaller ships flying around it, space opera, epic scale, digital painting"
+                    />
+                    <!-- Gradient Overlay - shorter height -->
+                    <div
+                      class="absolute bottom-0 left-0 right-0 h-1/2 bg-linear-to-t from-primary/80 via-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    ></div>
+                    <!-- Tags - top left, slide down -->
+                    <div
+                      class="absolute -top-8 left-4 flex items-center space-x-2 group-hover:top-4 transition-[top] duration-300"
+                    >
+                      <span
+                        class="bg-black/50 text-light text-xs font-bold px-3 py-1 rounded-full backdrop-blur-sm flex items-center"
+                        ><i class="fa-brands fa-discord mr-2 text-primary"></i
+                        >ACTION</span
+                      >
+                      <span
+                        class="bg-black/50 text-light text-xs font-bold px-3 py-1 rounded-full backdrop-blur-sm flex items-center"
+                        ><i class="fa-solid fa-microchip mr-2 text-primary"></i
+                        >GEFORCE</span
+                      >
+                    </div>
+                    <!-- Heading - bottom, slide up -->
+                    <div
+                      class="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+                    >
+                      <h3 class="font-bold text-dark font-chakra text-lg">
+                        The Legend of Zelda: Tears of the Kingdom
+                      </h3>
+                    </div>
+                    <div
+                      class="absolute inset-0 border-2 border-transparent group-hover:border-primary rounded-2xl transition-all duration-300 pointer-events-none"
+                    ></div>
+                  </div>
+                </div>
+                <!-- Slide 4 -->
+                <div
+                  class="carousel-item w-full md:w-1/2 lg:w-1/3 shrink-0 px-4"
+                >
+                  <div
+                    class="group relative aspect-4/3 rounded-2xl overflow-hidden cursor-pointer"
+                  >
+                    <img
+                      class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
+                      src="./imges/latest-games-4-DCWGKdgP.png"
+                      alt="a knight in glowing futuristic armor standing on a cliff overlooking a fantasy landscape with floating islands, high fantasy meets sci-fi"
+                    />
+                    <!-- Gradient Overlay - shorter height -->
+                    <div
+                      class="absolute bottom-0 left-0 right-0 h-1/2 bg-linear-to-t from-primary/80 via-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    ></div>
+                    <!-- Tags - top left, slide down -->
+                    <div
+                      class="absolute -top-8 left-4 flex items-center space-x-2 group-hover:top-4 transition-[top] duration-300"
+                    >
+                      <span
+                        class="bg-black/50 text-light text-xs font-bold px-3 py-1 rounded-full backdrop-blur-sm flex items-center"
+                        ><i
+                          class="fa-solid fa-shield-halved mr-2 text-primary"
+                        ></i
+                        >RPG</span
+                      >
+                      <span
+                        class="bg-black/50 text-light text-xs font-bold px-3 py-1 rounded-full backdrop-blur-sm flex items-center"
+                        ><i
+                          class="fa-solid fa-wand-magic-sparkles mr-2 text-primary"
+                        ></i
+                        >FANTASY</span
+                      >
+                    </div>
+                    <!-- Heading - bottom, slide up -->
+                    <div
+                      class="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+                    >
+                      <h3 class="font-bold text-dark font-chakra text-lg">
+                        Aetheria Chronicles
+                      </h3>
+                    </div>
+                    <div
+                      class="absolute inset-0 border-2 border-transparent group-hover:border-primary rounded-2xl transition-all duration-300 pointer-events-none"
+                    ></div>
+                  </div>
+                </div>
+                <!-- Slide 5 -->
+                <div
+                  class="carousel-item w-full md:w-1/2 lg:w-1/3 shrink-0 px-4"
+                >
+                  <div
+                    class="group relative aspect-4/3 rounded-2xl overflow-hidden cursor-pointer"
+                  >
+                    <img
+                      class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
+                      src="./imges/latest-games-5-D0uhM4CW.png"
+                      alt="a team of soldiers in tactical gear in a war-torn futuristic city, intense firefight, cinematic, gritty realism"
+                    />
+                    <!-- Gradient Overlay - shorter height -->
+                    <div
+                      class="absolute bottom-0 left-0 right-0 h-1/2 bg-linear-to-t from-primary/80 via-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    ></div>
+                    <!-- Tags - top left, slide down -->
+                    <div
+                      class="absolute -top-8 left-4 flex items-center space-x-2 group-hover:top-4 transition-[top] duration-300"
+                    >
+                      <span
+                        class="bg-black/50 text-light text-xs font-bold px-3 py-1 rounded-full backdrop-blur-sm flex items-center"
+                        ><i class="fa-solid fa-crosshairs mr-2 text-primary"></i
+                        >SHOOTER</span
+                      >
+                      <span
+                        class="bg-black/50 text-light text-xs font-bold px-3 py-1 rounded-full backdrop-blur-sm flex items-center"
+                        ><i
+                          class="fa-solid fa-user-friends mr-2 text-primary"
+                        ></i
+                        >CO-OP</span
+                      >
+                    </div>
+                    <!-- Heading - bottom, slide up -->
+                    <div
+                      class="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+                    >
+                      <h3 class="font-bold text-dark font-chakra text-lg">
+                        Warfront Protocol
+                      </h3>
+                    </div>
+                    <div
+                      class="absolute inset-0 border-2 border-transparent group-hover:border-primary rounded-2xl transition-all duration-300 pointer-events-none"
+                    ></div>
+                  </div>
+                </div>
+                <!-- Slide 6 -->
+                <div
+                  class="carousel-item w-full md:w-1/2 lg:w-1/3 shrink-0 px-4"
+                >
+                  <div
+                    class="group relative aspect-4/3 rounded-2xl overflow-hidden cursor-pointer"
+                  >
+                    <img
+                      class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
+                      src="./imges/latest-games-6-CJaIm3nW.png"
+                      alt="two cute green alien creatures standing on a desolate planet with a green nebula in the background, 3D render, vibrant, detailed"
+                    />
+                    <div
+                      class="absolute bottom-0 left-0 right-0 h-2/3 bg-linear-to-t from-primary/80 via-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    ></div>
+                    <div
+                      class="absolute -top-8 left-4 flex items-center space-x-2 group-hover:top-4 transition-[top] duration-300"
+                    >
+                      <span
+                        class="bg-black/50 text-light text-xs font-bold px-3 py-1 rounded-full backdrop-blur-sm flex items-center"
+                        ><i class="fa-solid fa-dragon mr-2 text-primary"></i
+                        >FOOTBALL</span
+                      >
+                      <span
+                        class="bg-black/50 text-light text-xs font-bold px-3 py-1 rounded-full backdrop-blur-sm flex items-center"
+                        ><i class="fa-solid fa-star mr-2 text-primary"></i
+                        >FANTASY</span
+                      >
+                    </div>
+                    <div
+                      class="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+                    >
+                      <h3 class="font-bold text-dark font-chakra text-lg">
+                        Shot Striker
+                      </h3>
+                    </div>
+                    <div
+                      class="absolute inset-0 border-2 border-transparent group-hover:border-primary rounded-2xl transition-all duration-300 pointer-events-none"
+                    ></div>
+                  </div>
+                </div>
+                <!-- Slide 7 -->
+                <div
+                  class="carousel-item w-full md:w-1/2 lg:w-1/3 shrink-0 px-4"
+                >
+                  <div
+                    class="group relative aspect-4/3 rounded-2xl overflow-hidden cursor-pointer"
+                  >
+                    <img
+                      class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
+                      src="./imges/latest-games-7-C9aSwQWa.png"
+                      alt="futuristic red hover car racing through a glowing green data tunnel, motion blur, cyberpunk style, cinematic lighting"
+                    />
+                    <div
+                      class="absolute bottom-0 left-0 right-0 h-1/2 bg-linear-to-t from-primary/80 via-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    ></div>
+                    <div
+                      class="absolute -top-8 left-4 flex items-center space-x-2 group-hover:top-4 transition-[top] duration-300"
+                    >
+                      <span
+                        class="bg-black/50 text-light text-xs font-bold px-3 py-1 rounded-full backdrop-blur-sm flex items-center"
+                        ><i class="fa-solid fa-trophy mr-2 text-primary"></i
+                        >SPORTS</span
+                      >
+                      <span
+                        class="bg-black/50 text-light text-xs font-bold px-3 py-1 rounded-full backdrop-blur-sm flex items-center"
+                        ><i class="fa-solid fa-fire mr-2 text-primary"></i
+                        >LEAGUE</span
+                      >
+                    </div>
+                    <div
+                      class="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+                    >
+                      <h3 class="font-bold text-dark font-chakra text-lg">
+                        Epic Gaming League
+                      </h3>
+                    </div>
+                    <div
+                      class="absolute inset-0 border-2 border-transparent group-hover:border-primary rounded-2xl transition-all duration-300 pointer-events-none"
+                    ></div>
+                  </div>
+                </div>
+                <!-- Slide 8 -->
+                <div
+                  class="carousel-item w-full md:w-1/2 lg:w-1/3 shrink-0 px-4"
+                >
+                  <div
+                    class="group relative aspect-4/3 rounded-2xl overflow-hidden cursor-pointer"
+                  >
+                    <img
+                      class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
+                      src="./imges/latest-games-8-CDS2WV4Q.png"
+                      alt="massive alien mothership hovering over a lush green planet with smaller ships flying around it, space opera, epic scale, digital painting"
+                    />
+                    <div
+                      class="absolute bottom-0 left-0 right-0 h-1/2 bg-linear-to-t from-primary/80 via-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    ></div>
+                    <div
+                      class="absolute -top-8 left-4 flex items-center space-x-2 group-hover:top-4 transition-[top] duration-300"
+                    >
+                      <span
+                        class="bg-black/50 text-light text-xs font-bold px-3 py-1 rounded-full backdrop-blur-sm flex items-center"
+                        ><i class="fa-solid fa-rocket mr-2 text-primary"></i
+                        >SPACE</span
+                      >
+                      <span
+                        class="bg-black/50 text-light text-xs font-bold px-3 py-1 rounded-full backdrop-blur-sm flex items-center"
+                        ><i class="fa-solid fa-globe mr-2 text-primary"></i
+                        >EXPLORATION</span
+                      >
+                    </div>
+                    <div
+                      class="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+                    >
+                      <h3 class="font-bold text-dark font-chakra text-lg">
+                        Barren alien worlds
+                      </h3>
+                    </div>
+                    <div
+                      class="absolute inset-0 border-2 border-transparent group-hover:border-primary rounded-2xl transition-all duration-300 pointer-events-none"
+                    ></div>
+                  </div>
+                </div>
+                <!-- Slide 9 -->
+                <div
+                  class="carousel-item w-full md:w-1/2 lg:w-1/3 shrink-0 px-4"
+                >
+                  <div
+                    class="group relative aspect-4/3 rounded-2xl overflow-hidden cursor-pointer"
+                  >
+                    <img
+                      class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
+                      src="./imges/latest-games-9-BhBeVXRH.png"
+                      alt="a knight in glowing futuristic armor standing on a cliff overlooking a fantasy landscape with floating islands, high fantasy meets sci-fi"
+                    />
+                    <div
+                      class="absolute bottom-0 left-0 right-0 h-1/2 bg-linear-to-t from-primary/80 via-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    ></div>
+                    <div
+                      class="absolute -top-8 left-4 flex items-center space-x-2 group-hover:top-4 transition-[top] duration-300"
+                    >
+                      <span
+                        class="bg-black/50 text-light text-xs font-bold px-3 py-1 rounded-full backdrop-blur-sm flex items-center"
+                        ><i class="fa-solid fa-hat-wizard mr-2 text-primary"></i
+                        >ACTION</span
+                      >
+                      <span
+                        class="bg-black/50 text-light text-xs font-bold px-3 py-1 rounded-full backdrop-blur-sm flex items-center"
+                        ><i class="fa-solid fa-dungeon mr-2 text-primary"></i
+                        >FUTURISTIC</span
+                      >
+                    </div>
+                    <div
+                      class="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
+                    >
+                      <h3 class="font-bold text-dark font-chakra text-lg">
+                        Cloveland Quest
+                      </h3>
+                    </div>
+                    <div
+                      class="absolute inset-0 border-2 border-transparent group-hover:border-primary rounded-2xl transition-all duration-300 pointer-events-none"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col sm:flex-row justify-center items-center mt-8 md:mt-12 gap-4 sm:gap-8"
+          >
+            <div class="flex items-center space-x-4">
+              <button
+                id="prev-game"
+                class="w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-gray-700 text-gray-400 hover:border-primary hover:text-primary transition-all duration-300 flex items-center justify-center cursor-pointer"
+              >
+                <i class="fa-solid fa-arrow-left text-lg sm:text-xl"></i>
+              </button>
+              <button
+                id="next-game"
+                class="w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-gray-700 text-gray-400 hover:border-primary hover:text-primary transition-all duration-300 flex items-center justify-center cursor-pointer"
+              >
+                <i class="fa-solid fa-arrow-right text-lg sm:text-xl"></i>
+              </button>
+            </div>
+            <a
+              href="./games.html"
+              class="border-2 border-primary text-primary px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-bold text-sm sm:text-base md:text-lg hover:bg-primary hover:text-dark transition-all cursor-pointer w-full sm:w-auto"
+            >
+              VIEW ALL GAMES
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMPONENT: What We Do Section -->
+      <section id="what-we-do" class="py-16 md:py-24 bg-dark section-separator">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+          <div class="text-center mb-12 md:mb-16">
+            <p
+              class="text-primary font-bold tracking-[0.2em] mb-4 text-sm md:text-base relative inline-block before:content-[''] before:absolute before:left-[-40px] sm:before:left-[-80px] before:top-1/2 before:-translate-y-1/2 before:w-8 sm:before:w-16 before:h-[2px] before:bg-linear-to-r before:from-transparent before:via-primary before:to-primary after:content-[''] after:absolute after:right-[-40px] sm:after:right-[-80px] after:top-1/2 after:-translate-y-1/2 after:w-8 sm:after:w-16 after:h-[2px] after:bg-linear-to-l after:from-transparent after:via-primary after:to-primary"
+            >
+              WHAT WE DO
+            </p>
+            <h2
+              class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2"
+            >
+              More Than Just Games
+            </h2>
+            <p class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
+              We Build <span class="text-primary">Interactive</span> Journeys
+            </p>
+          </div>
+
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+            <div
+              class="aspect-square bg-[#1A1A1A] rounded-2xl p-4 md:p-6 flex flex-col items-center justify-center text-center relative border border-gray-800 hover:border-primary transition-all duration-300 group overflow-hidden"
+            >
+              <div
+                class="absolute -top-6 -left-6 w-0 h-0 border-t-24 border-t-gray-600 group-hover:border-t-primary border-r-24 border-r-transparent transition-all duration-300 group-hover:top-4 group-hover:left-4"
+              ></div>
+              <div
+                class="absolute -bottom-6 -right-6 w-0 h-0 border-b-24 border-b-gray-600 group-hover:border-b-primary border-l-24 border-l-transparent transition-all duration-300 group-hover:bottom-4 group-hover:right-4"
+              ></div>
+              <div
+                class="w-12 h-12 md:w-16 md:h-16 bg-gray-800 rounded-lg flex items-center justify-center mb-3 md:mb-4 group-hover:bg-primary transition-all duration-300"
+              >
+                <i
+                  class="fa-solid fa-desktop text-primary text-xl md:text-2xl group-hover:text-dark transition-all duration-300"
+                ></i>
+              </div>
+              <h3 class="text-lg md:text-xl font-bold leading-tight">
+                PC Game<br />Development
+              </h3>
+            </div>
+
+            <div
+              class="aspect-square bg-[#1A1A1A] rounded-2xl p-4 md:p-6 flex flex-col items-center justify-center text-center relative border border-gray-800 hover:border-primary transition-all duration-300 group overflow-hidden"
+            >
+              <div
+                class="absolute -top-6 -left-6 w-0 h-0 border-t-24 border-t-gray-600 group-hover:border-t-primary border-r-24 border-r-transparent transition-all duration-300 group-hover:top-4 group-hover:left-4"
+              ></div>
+              <div
+                class="absolute -bottom-6 -right-6 w-0 h-0 border-b-24 border-b-gray-600 group-hover:border-b-primary border-l-24 border-l-transparent transition-all duration-300 group-hover:bottom-4 group-hover:right-4"
+              ></div>
+              <div
+                class="w-12 h-12 md:w-16 md:h-16 bg-gray-800 rounded-lg flex items-center justify-center mb-3 md:mb-4 group-hover:bg-primary transition-all duration-300"
+              >
+                <i
+                  class="fa-solid fa-mobile-screen-button text-primary text-xl md:text-2xl group-hover:text-dark transition-all duration-300"
+                ></i>
+              </div>
+              <h3 class="text-lg md:text-xl font-bold leading-tight">
+                Mobile Game<br />Development
+              </h3>
+            </div>
+
+            <div class="aspect-square rounded-2xl overflow-hidden">
+              <img
+                class="w-full h-full object-cover"
+                src="./imges/what-we-do-1-DuZnkwGW.png"
+                alt="two vibrant lime green gaming controllers floating against a matching lime green background, studio lighting, product shot"
+              />
+            </div>
+
+            <div
+              class="aspect-square bg-[#1A1A1A] rounded-2xl p-6 flex flex-col items-center justify-center text-center relative border border-gray-800 hover:border-primary transition-all duration-300 group overflow-hidden"
+            >
+              <div
+                class="absolute -top-6 -left-6 w-0 h-0 border-t-24 border-t-gray-600 group-hover:border-t-primary border-r-24 border-r-transparent transition-all duration-300 group-hover:top-4 group-hover:left-4"
+              ></div>
+              <div
+                class="absolute -bottom-6 -right-6 w-0 h-0 border-b-24 border-b-gray-600 group-hover:border-b-primary border-l-24 border-l-transparent transition-all duration-300 group-hover:bottom-4 group-hover:right-4"
+              ></div>
+              <div
+                class="w-16 h-16 bg-gray-800 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary transition-all duration-300"
+              >
+                <i
+                  class="fa-solid fa-vr-cardboard text-primary text-2xl group-hover:text-dark transition-all duration-300"
+                ></i>
+              </div>
+              <h3 class="text-lg md:text-xl font-bold">AR/VR<br />Solutions</h3>
+            </div>
+
+            <div
+              class="aspect-square bg-[#1A1A1A] rounded-2xl p-6 flex flex-col items-center justify-center text-center relative border border-gray-800 hover:border-primary transition-all duration-300 group overflow-hidden"
+            >
+              <div
+                class="absolute -top-6 -left-6 w-0 h-0 border-t-24 border-t-gray-600 group-hover:border-t-primary border-r-24 border-r-transparent transition-all duration-300 group-hover:top-4 group-hover:left-4"
+              ></div>
+              <div
+                class="absolute -bottom-6 -right-6 w-0 h-0 border-b-24 border-b-gray-600 group-hover:border-b-primary border-l-24 border-l-transparent transition-all duration-300 group-hover:bottom-4 group-hover:right-4"
+              ></div>
+              <div
+                class="w-16 h-16 bg-gray-800 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary transition-all duration-300"
+              >
+                <i
+                  class="fa-solid fa-cubes text-primary text-2xl group-hover:text-dark transition-all duration-300"
+                ></i>
+              </div>
+              <h3 class="text-lg md:text-xl font-bold">AR/VR<br />Design</h3>
+            </div>
+
+            <div class="aspect-square rounded-2xl overflow-hidden">
+              <img
+                class="w-full h-full object-cover"
+                src="./imges/what-we-do-2-DVAo6agz.png"
+                alt="3D stylized cartoon character, a male superhero in a green and white suit, smiling and holding a green tomato bomb, dynamic pose, vibrant green background"
+              />
+            </div>
+
+            <div
+              class="aspect-square bg-[#1A1A1A] rounded-2xl p-6 flex flex-col items-center justify-center text-center relative border border-gray-800 hover:border-primary transition-all duration-300 group overflow-hidden"
+            >
+              <div
+                class="absolute -top-6 -left-6 w-0 h-0 border-t-24 border-t-gray-600 group-hover:border-t-primary border-r-24 border-r-transparent transition-all duration-300 group-hover:top-4 group-hover:left-4"
+              ></div>
+              <div
+                class="absolute -bottom-6 -right-6 w-0 h-0 border-b-24 border-b-gray-600 group-hover:border-b-primary border-l-24 border-l-transparent transition-all duration-300 group-hover:bottom-4 group-hover:right-4"
+              ></div>
+              <div
+                class="w-16 h-16 bg-gray-800 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary transition-all duration-300"
+              >
+                <i
+                  class="fa-brands fa-playstation text-primary text-2xl group-hover:text-dark transition-all duration-300"
+                ></i>
+              </div>
+              <h3 class="text-lg md:text-xl font-bold">
+                PS4 Game<br />Development
+              </h3>
+            </div>
+
+            <div
+              class="aspect-square bg-[#1A1A1A] rounded-2xl p-6 flex flex-col items-center justify-center text-center relative border border-gray-800 hover:border-primary transition-all duration-300 group overflow-hidden"
+            >
+              <div
+                class="absolute -top-6 -left-6 w-0 h-0 border-t-24 border-t-gray-600 group-hover:border-t-primary border-r-24 border-r-transparent transition-all duration-300 group-hover:top-4 group-hover:left-4"
+              ></div>
+              <div
+                class="absolute -bottom-6 -right-6 w-0 h-0 border-b-24 border-b-gray-600 group-hover:border-b-primary border-l-24 border-l-transparent transition-all duration-300 group-hover:bottom-4 group-hover:right-4"
+              ></div>
+              <div
+                class="w-16 h-16 bg-gray-800 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary transition-all duration-300"
+              >
+                <i
+                  class="fa-solid fa-cube text-primary text-2xl group-hover:text-dark transition-all duration-300"
+                ></i>
+              </div>
+              <h3 class="text-lg md:text-xl font-bold">3D<br />Modelings</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMPONENT: Sponsors Section -->
+      <section id="sponsors" class="py-20 overflow-hidden">
+        <div class="px-6">
+          <div class="relative isolate">
+            <!-- First Row - Moving Left -->
+            <div class="relative overflow-hidden mb-4">
+              <div class="flex animate-scroll-left">
+                <div class="flex space-x-4 min-w-max">
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-1-ByM-Sex8.jpg"
+                      alt="nvidia gaming logo green and black"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-2-0gIktwSm.jpg"
+                      alt="intel gaming logo blue"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-3-CczztP90.jpg"
+                      alt="razer gaming logo green"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-4-CqgtpirC.jpg"
+                      alt="corsair gaming logo yellow"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-5-DFypfU0k.jpg"
+                      alt="logitech g gaming logo blue"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-6-DcGD8G7v.jpg"
+                      alt="steelseries gaming logo orange"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-7-DSTdzFnp.jpg"
+                      alt="steelseries gaming logo orange"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-8-BuH3qQns.jpg"
+                      alt="steelseries gaming logo orange"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-9-btJ2eZYX.jpg"
+                      alt="steelseries gaming logo orange"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-10-DlvZwrGv.jpg"
+                      alt="steelseries gaming logo orange"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-1-ByM-Sex8.jpg"
+                      alt="steelseries gaming logo orange"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-3-CczztP90.jpg"
+                      alt="steelseries gaming logo orange"
+                    />
+                  </div>
+                  <!-- Duplicate for seamless loop -->
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-1-ByM-Sex8.jpg"
+                      alt="nvidia gaming logo green and black"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-2-0gIktwSm.jpg"
+                      alt="intel gaming logo blue"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-3-CczztP90.jpg"
+                      alt="razer gaming logo green"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-4-CqgtpirC.jpg"
+                      alt="corsair gaming logo yellow"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-5-DFypfU0k.jpg"
+                      alt="logitech g gaming logo blue"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-6-DcGD8G7v.jpg"
+                      alt="steelseries gaming logo orange"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-7-DSTdzFnp.jpg"
+                      alt="steelseries gaming logo orange"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-8-BuH3qQns.jpg"
+                      alt="steelseries gaming logo orange"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-9-btJ2eZYX.jpg"
+                      alt="steelseries gaming logo orange"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-10-DlvZwrGv.jpg"
+                      alt="steelseries gaming logo orange"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-1-ByM-Sex8.jpg"
+                      alt="steelseries gaming logo orange"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-3-CczztP90.jpg"
+                      alt="steelseries gaming logo orange"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- Fade overlay -->
+              <div
+                class="absolute inset-y-0 left-0 w-32 bg-linear-to-r from-gray-900 to-transparent pointer-events-none z-10"
+              ></div>
+              <div
+                class="absolute inset-y-0 right-0 w-32 bg-linear-to-l from-gray-900 to-transparent pointer-events-none z-10"
+              ></div>
+            </div>
+
+            <!-- Second Row - Moving Right -->
+            <div class="relative overflow-hidden">
+              <div class="flex animate-scroll-right">
+                <div class="flex space-x-4 min-w-max">
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-1-ByM-Sex8.jpg"
+                      alt="nvidia gaming logo green and black"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-2-0gIktwSm.jpg"
+                      alt="intel gaming logo blue"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-3-CczztP90.jpg"
+                      alt="razer gaming logo green"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-4-CqgtpirC.jpg"
+                      alt="corsair gaming logo yellow"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-5-DFypfU0k.jpg"
+                      alt="logitech g gaming logo blue"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-6-DcGD8G7v.jpg"
+                      alt="steelseries gaming logo orange"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-7-DSTdzFnp.jpg"
+                      alt="steelseries gaming logo orange"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-8-BuH3qQns.jpg"
+                      alt="steelseries gaming logo orange"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-9-btJ2eZYX.jpg"
+                      alt="steelseries gaming logo orange"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-10-DlvZwrGv.jpg"
+                      alt="steelseries gaming logo orange"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-1-ByM-Sex8.jpg"
+                      alt="steelseries gaming logo orange"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-3-CczztP90.jpg"
+                      alt="steelseries gaming logo orange"
+                    />
+                  </div>
+                  <!-- Duplicate for seamless loop -->
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-1-ByM-Sex8.jpg"
+                      alt="nvidia gaming logo green and black"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-2-0gIktwSm.jpg"
+                      alt="intel gaming logo blue"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-3-CczztP90.jpg"
+                      alt="razer gaming logo green"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-4-CqgtpirC.jpg"
+                      alt="corsair gaming logo yellow"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-5-DFypfU0k.jpg"
+                      alt="logitech g gaming logo blue"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-6-DcGD8G7v.jpg"
+                      alt="steelseries gaming logo orange"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-7-DSTdzFnp.jpg"
+                      alt="steelseries gaming logo orange"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-8-BuH3qQns.jpg"
+                      alt="steelseries gaming logo orange"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-9-btJ2eZYX.jpg"
+                      alt="steelseries gaming logo orange"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-10-DlvZwrGv.jpg"
+                      alt="steelseries gaming logo orange"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-1-ByM-Sex8.jpg"
+                      alt="steelseries gaming logo orange"
+                    />
+                  </div>
+                  <div
+                    class="bg-gray-800 rounded-xl overflow-hidden hover:bg-gray-700 transition-all flex items-center justify-center h-24 w-24"
+                  >
+                    <img
+                      class="max-w-full max-h-full"
+                      src="./imges/logo-3-CczztP90.jpg"
+                      alt="steelseries gaming logo orange"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- Fade overlay -->
+              <div
+                class="absolute inset-y-0 left-0 w-32 bg-linear-to-r from-gray-900 to-transparent pointer-events-none z-10"
+              ></div>
+              <div
+                class="absolute inset-y-0 right-0 w-32 bg-linear-to-l from-gray-900 to-transparent pointer-events-none z-10"
+              ></div>
+            </div>
+
+            <div
+              class="absolute top-1/2 left-1/2 -translate-1/2 w-[1200px] h-[350px] -z-10 bg-radial from-primary/85 from-0% to-70% to-transparent"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMPONENT: Team Members Section -->
+      <section id="team-members" class="py-24 bg-dark">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="text-center mb-16">
+            <p
+              class="text-primary font-bold tracking-[0.2em] mb-4 relative inline-block before:content-[''] before:absolute before:left-[-80px] before:top-1/2 before:-translate-y-1/2 before:w-16 before:h-[2px] before:bg-linear-to-r before:from-transparent before:via-primary before:to-primary after:content-[''] after:absolute after:right-[-80px] after:top-1/2 after:-translate-y-1/2 after:w-16 after:h-[2px] after:bg-linear-to-l after:from-transparent after:via-primary after:to-primary"
+            >
+              OUR TEAM
+            </p>
+            <h2 class="text-5xl font-bold">Our Best Team Members</h2>
+            <p class="text-xl text-gray-400 mt-6">
+              Meet the professional gamers and experts behind our success
+            </p>
+          </div>
+
+          <div
+            class="*:cursor-pointer grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+          >
+            <div
+              class="group team-member-card relative overflow-hidden rounded-2xl bg-gray-900"
+            >
+              <div class="relative h-80">
+                <img
+                  class="w-full h-full object-cover"
+                  src="./imges/avatar-1-Bk0fx3lX.png"
+                  alt="professional esports player portrait, male, gaming headset, competitive look"
+                />
+                <div
+                  class="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent opacity-60"
+                ></div>
+              </div>
+              <div class="absolute bottom-0 left-0 right-0 p-6">
+                <div class="flex items-end justify-between">
+                  <div>
+                    <h3 class="text-xl font-bold text-white mb-1">
+                      Alex "Phantom" Chen
+                    </h3>
+                    <p class="text-primary text-sm">Pro Player - VALORANT</p>
+                    <p class="text-gray-400 text-xs">World Champion 2023</p>
+                  </div>
+                  <div class="rotate-text text-primary font-bold text-lg">
+                    PHANTOM
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="group team-member-card relative overflow-hidden rounded-2xl bg-gray-900"
+            >
+              <div class="relative h-80">
+                <img
+                  class="w-full h-full object-cover"
+                  src="./imges/avatar-2-DSM5R69_.png"
+                  alt="male esports player portrait, competitive gamer, intense look"
+                />
+                <div
+                  class="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent opacity-60"
+                ></div>
+              </div>
+              <div class="absolute bottom-0 left-0 right-0 p-6">
+                <div class="flex items-end justify-between">
+                  <div>
+                    <h3 class="text-xl font-bold text-white mb-1">
+                      Ali "Nova" Ahmed
+                    </h3>
+                    <p class="text-primary text-sm">
+                      Pro Player - League of Legends
+                    </p>
+                    <p class="text-gray-400 text-xs">MVP 2023 Season</p>
+                  </div>
+                  <div class="rotate-text text-primary font-bold text-lg">
+                    NOVA
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="group team-member-card relative overflow-hidden rounded-2xl bg-gray-900"
+            >
+              <div class="relative h-80">
+                <img
+                  class="w-full h-full object-cover"
+                  src="./imges/avatar-3-CISh2V2J.png"
+                  alt="esports coach male portrait, professional gaming mentor"
+                />
+                <div
+                  class="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent opacity-60"
+                ></div>
+              </div>
+              <div class="absolute bottom-0 left-0 right-0 p-6">
+                <div class="flex items-end justify-between">
+                  <div>
+                    <h3 class="text-xl font-bold text-white mb-1">
+                      Marcus "Viper" Rodriguez
+                    </h3>
+                    <p class="text-primary text-sm">Head Coach - CS:GO</p>
+                    <p class="text-gray-400 text-xs">5x Major Winner</p>
+                  </div>
+                  <div class="rotate-text text-primary font-bold text-lg">
+                    VIPER
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="group team-member-card relative overflow-hidden rounded-2xl bg-gray-900"
+            >
+              <div class="relative h-80">
+                <img
+                  class="w-full h-full object-cover"
+                  src="./imges/avatar-4-BCbP093U.png"
+                  alt="female esports analyst portrait, gaming expert, professional"
+                />
+                <div
+                  class="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent opacity-60"
+                ></div>
+              </div>
+              <div class="absolute bottom-0 left-0 right-0 p-6">
+                <div class="flex items-end justify-between">
+                  <div>
+                    <h3 class="text-xl font-bold text-white mb-1">
+                      Seif "Saga" Usama
+                    </h3>
+                    <p class="text-primary text-sm">Strategic Analyst</p>
+                    <p class="text-gray-400 text-xs">Data Science Expert</p>
+                  </div>
+                  <div class="rotate-text text-primary font-bold text-lg">
+                    SAGA
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="group team-member-card relative overflow-hidden rounded-2xl bg-gray-900"
+            >
+              <div class="relative h-80">
+                <img
+                  class="w-full h-full object-cover"
+                  src="./imges/avatar-5-CKJm2Bjf.png"
+                  alt="young male esports player portrait, gaming prodigy, competitive"
+                />
+                <div
+                  class="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent opacity-60"
+                ></div>
+              </div>
+              <div class="absolute bottom-0 left-0 right-0 p-6">
+                <div class="flex items-end justify-between">
+                  <div>
+                    <h3 class="text-xl font-bold text-white mb-1">
+                      Jake "Storm" Wilson
+                    </h3>
+                    <p class="text-primary text-sm">
+                      Pro Player - Apex Legends
+                    </p>
+                    <p class="text-gray-400 text-xs">Rising Star 2023</p>
+                  </div>
+                  <div class="rotate-text text-primary font-bold text-lg">
+                    STORM
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="group team-member-card relative overflow-hidden rounded-2xl bg-gray-900"
+            >
+              <div class="relative h-80">
+                <img
+                  class="w-full h-full object-cover"
+                  src="./imges/avatar-6-BC4VdJS3.png"
+                  alt="experienced male gaming coach portrait, veteran esports professional"
+                />
+                <div
+                  class="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent opacity-60"
+                ></div>
+              </div>
+              <div class="absolute bottom-0 left-0 right-0 p-6">
+                <div class="flex items-end justify-between">
+                  <div>
+                    <h3 class="text-xl font-bold text-white mb-1">
+                      David "Titan" Park
+                    </h3>
+                    <p class="text-primary text-sm">Team Captain - Dota 2</p>
+                    <p class="text-gray-400 text-xs">
+                      The International Winner
+                    </p>
+                  </div>
+                  <div class="rotate-text text-primary font-bold text-lg">
+                    TITAN
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="group team-member-card relative overflow-hidden rounded-2xl bg-gray-900"
+            >
+              <div class="relative h-80">
+                <img
+                  class="w-full h-full object-cover"
+                  src="./imges/avatar-7-B1LKlfbK.png"
+                  alt="male gaming streamer portrait, content creator, esports personality"
+                />
+                <div
+                  class="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent opacity-60"
+                ></div>
+              </div>
+              <div class="absolute bottom-0 left-0 right-0 p-6">
+                <div class="flex items-end justify-between">
+                  <div>
+                    <h3 class="text-xl font-bold text-white mb-1">
+                      Khaled "Phoenix" Ali
+                    </h3>
+                    <p class="text-primary text-sm">Content Creator</p>
+                    <p class="text-gray-400 text-xs">2M+ Followers</p>
+                  </div>
+                  <div class="rotate-text text-primary font-bold text-lg">
+                    PHOENIX
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="group team-member-card relative overflow-hidden rounded-2xl bg-gray-900"
+            >
+              <div class="relative h-80">
+                <img
+                  class="w-full h-full object-cover"
+                  src="./imges/avatar-8-DlHfYIx6.png"
+                  alt="male esports manager portrait, professional gaming executive"
+                />
+                <div
+                  class="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent opacity-60"
+                ></div>
+              </div>
+              <div class="absolute bottom-0 left-0 right-0 p-6">
+                <div class="flex items-end justify-between">
+                  <div>
+                    <h3 class="text-xl font-bold text-white mb-1">
+                      Ryan "Ghost" Miller
+                    </h3>
+                    <p class="text-primary text-sm">Team Manager</p>
+                    <p class="text-gray-400 text-xs">Operations Lead</p>
+                  </div>
+                  <div class="rotate-text text-primary font-bold text-lg">
+                    GHOST
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMPONENT: Upcoming Tournaments Section -->
+      <section
+        id="upcoming-tournaments"
+        class="py-24 bg-linear-to-br from-gray-900 to-dark"
+      >
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="text-center mb-16">
+            <p
+              class="text-primary font-bold tracking-[0.2em] mb-4 relative inline-block before:content-[''] before:absolute before:left-[-80px] before:top-1/2 before:-translate-y-1/2 before:w-16 before:h-[2px] before:bg-linear-to-r before:from-transparent before:via-primary before:to-primary after:content-[''] after:absolute after:right-[-80px] after:top-1/2 after:-translate-y-1/2 after:w-16 after:h-[2px] after:bg-linear-to-l after:from-transparent after:via-primary after:to-primary"
+            >
+              TOURNAMENTS
+            </p>
+            <h2 class="text-5xl font-bold">Upcoming Tournaments</h2>
+            <p class="text-xl text-gray-400 mt-6">
+              Join the most competitive gaming events and win amazing prizes
+            </p>
+          </div>
+
+          <div class="flex justify-center mb-12">
+            <div
+              class="tabs-links space-x-2 lg:space-x-4 bg-gray-800 rounded-2xl p-2 inline-flex"
+            >
+              <button
+                class="tournament-tab text-sm lg:text-lg active px-3 lg:px-6 py-4 rounded-xl font-bold cursor-pointer"
+                data-tab="featured"
+              >
+                Featured
+              </button>
+              <button
+                class="tournament-tab text-sm lg:text-lg px-3 lg:px-6 py-4 rounded-xl font-bold cursor-pointer"
+                data-tab="live"
+              >
+                Live Now
+              </button>
+              <button
+                class="tournament-tab text-sm lg:text-lg px-3 lg:px-6 py-4 rounded-xl font-bold cursor-pointer"
+                data-tab="completed"
+              >
+                Completed
+              </button>
+            </div>
+          </div>
+
+          <div class="tab-content" id="featured-content">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+              <div
+                class="bg-linear-to-r from-primary to-green-400 rounded-2xl p-8 text-dark relative overflow-hidden"
+              >
+                <div class="relative z-10">
+                  <div class="flex items-center gap-5 justify-between mb-6">
+                    <div>
+                      <h3 class="text-xl lg:text-3xl font-bold">
+                        VALORANT Champions
+                      </h3>
+                      <p class="text-sm lg:text-lg opacity-80">
+                        Global Championship
+                      </p>
+                    </div>
+                    <div class="text-right">
+                      <p class="text-2xl lg:text-4xl font-bold">$500K</p>
+                      <p class="opacity-80">Prize Pool</p>
+                    </div>
+                  </div>
+                  <div class="grid grid-cols-3 gap-4 mb-6">
+                    <div class="bg-black/20 rounded-lg p-3 text-center">
+                      <p class="text-2xl font-bold">15</p>
+                      <p class="text-sm">Days</p>
+                    </div>
+                    <div class="bg-black/20 rounded-lg p-3 text-center">
+                      <p class="text-2xl font-bold">08</p>
+                      <p class="text-sm">Hours</p>
+                    </div>
+                    <div class="bg-black/20 rounded-lg p-3 text-center">
+                      <p class="text-2xl font-bold">42</p>
+                      <p class="text-sm">Minutes</p>
+                    </div>
+                  </div>
+                  <button
+                    class="bg-dark btn-shine text-primary px-6 py-3 rounded-lg font-bold transition-all cursor-pointer"
+                  >
+                    Register Now
+                  </button>
+                </div>
+              </div>
+
+              <div class="space-y-4">
+                <div
+                  class="bg-gray-800 rounded-xl p-6 hover:bg-gray-700 transition-all"
+                >
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-4">
+                      <img
+                        class="w-16 h-16 rounded-lg object-cover"
+                        src="./imges/latest-games-1-CfV33bjK.png"
+                        alt="league of legends world championship logo"
+                      />
+                      <div>
+                        <h4 class="text-base lg:text-xl font-bold">
+                          League World Championship
+                        </h4>
+                        <p class="text-gray-400">November 25, 2024</p>
+                        <p class="text-primary font-bold">$2.2M Prize Pool</p>
+                      </div>
+                    </div>
+                    <button
+                      class="bg-primary btn-shine text-dark px-4 py-2 rounded-lg font-bold cursor-pointer"
+                    >
+                      Join
+                    </button>
+                  </div>
+                </div>
+
+                <div
+                  class="bg-gray-800 rounded-xl p-6 hover:bg-gray-700 transition-all"
+                >
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-4">
+                      <img
+                        class="w-16 h-16 rounded-lg object-cover"
+                        src="./imges/latest-games-5-D0uhM4CW.png"
+                        alt="cs go major tournament logo"
+                      />
+                      <div>
+                        <h4 class="text-base lg:text-xl font-bold">
+                          CS:GO Major
+                        </h4>
+                        <p class="text-gray-400">December 10, 2024</p>
+                        <p class="text-primary font-bold">$1M Prize Pool</p>
+                      </div>
+                    </div>
+                    <button
+                      class="bg-primary btn-shine text-dark px-4 py-2 rounded-lg font-bold cursor-pointer"
+                    >
+                      Join
+                    </button>
+                  </div>
+                </div>
+
+                <div
+                  class="bg-gray-800 rounded-xl p-6 hover:bg-gray-700 transition-all"
+                >
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-4">
+                      <img
+                        class="w-16 h-16 rounded-lg object-cover"
+                        src="./imges/latest-games-3-3PuaZ95E.png"
+                        alt="dota 2 international tournament logo"
+                      />
+                      <div>
+                        <h4 class="text-base lg:text-xl font-bold">
+                          The International
+                        </h4>
+                        <p class="text-gray-400">January 15, 2025</p>
+                        <p class="text-primary font-bold">$3M Prize Pool</p>
+                      </div>
+                    </div>
+                    <button
+                      class="bg-primary btn-shine text-dark px-4 py-2 rounded-lg font-bold cursor-pointer"
+                    >
+                      Join
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content hidden" id="live-content">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+              <div
+                class="relative bg-linear-to-br from-red-900/40 to-gray-900 border-2 border-red-500 rounded-2xl p-8 overflow-hidden group hover:border-red-400 transition-all"
+              >
+                <div
+                  class="absolute top-0 right-0 w-40 h-40 bg-red-500/20 rounded-full blur-3xl"
+                ></div>
+                <div class="relative z-10">
+                  <div class="flex items-center justify-between mb-6">
+                    <div class="flex items-center">
+                      <div class="relative mr-3">
+                        <div
+                          class="w-4 h-4 bg-red-500 rounded-full animate-pulse"
+                        ></div>
+                        <div
+                          class="absolute inset-0 w-4 h-4 bg-red-500 rounded-full animate-ping"
+                        ></div>
+                      </div>
+                      <span
+                        class="text-red-400 font-bold text-lg uppercase tracking-wide"
+                        >LIVE NOW</span
+                      >
+                    </div>
+                    <div
+                      class="flex items-center bg-black/30 px-3 py-1 rounded-full"
+                    >
+                      <i class="fa-solid fa-eye text-red-400 mr-2"></i>
+                      <span class="text-white font-bold">45,231</span>
+                    </div>
+                  </div>
+                  <h3 class="text-lg lg:text-3xl font-bold mb-3 text-white">
+                    Apex Legends Championship
+                  </h3>
+                  <p class="text-gray-300 mb-6 text-lg">
+                    <i class="fa-solid fa-trophy mr-2 text-red-400"></i>Finals -
+                    Match 3/5
+                  </p>
+                  <div class="grid grid-cols-2 gap-4 mb-6">
+                    <div
+                      class="bg-black/30 rounded-lg p-4 border border-red-500/30"
+                    >
+                      <p class="text-gray-400 text-sm mb-1">Prize Pool</p>
+                      <p class="text-2xl font-bold text-red-400">$250K</p>
+                    </div>
+                    <div
+                      class="bg-black/30 rounded-lg p-4 border border-red-500/30"
+                    >
+                      <p class="text-gray-400 text-sm mb-1">Region</p>
+                      <p class="text-2xl font-bold text-white">Global</p>
+                    </div>
+                  </div>
+                  <button
+                    class="w-full bg-red-500 btn-shine text-white px-6 py-4 rounded-lg font-bold text-lg hover:bg-red-600 transition-all flex items-center justify-center cursor-pointer"
+                  >
+                    <i class="fa-solid fa-play mr-2"></i>Watch Live Stream
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="relative bg-linear-to-br from-red-900/40 to-gray-900 border-2 border-red-500 rounded-2xl p-8 overflow-hidden group hover:border-red-400 transition-all"
+              >
+                <div
+                  class="absolute top-0 right-0 w-40 h-40 bg-red-500/20 rounded-full blur-3xl"
+                ></div>
+                <div class="relative z-10">
+                  <div class="flex items-center justify-between mb-6">
+                    <div class="flex items-center">
+                      <div class="relative mr-3">
+                        <div
+                          class="w-4 h-4 bg-red-500 rounded-full animate-pulse"
+                        ></div>
+                        <div
+                          class="absolute inset-0 w-4 h-4 bg-red-500 rounded-full animate-ping"
+                        ></div>
+                      </div>
+                      <span
+                        class="text-red-400 font-bold text-lg uppercase tracking-wide"
+                        >LIVE NOW</span
+                      >
+                    </div>
+                    <div
+                      class="flex items-center bg-black/30 px-3 py-1 rounded-full"
+                    >
+                      <i class="fa-solid fa-eye text-red-400 mr-2"></i>
+                      <span class="text-white font-bold">32,891</span>
+                    </div>
+                  </div>
+                  <h3 class="text-lg lg:text-3xl font-bold mb-3 text-white">
+                    Fortnite Battle Royale
+                  </h3>
+                  <p class="text-gray-300 mb-6 text-lg">
+                    <i class="fa-solid fa-trophy mr-2 text-red-400"></i>Solo
+                    Championship
+                  </p>
+                  <div class="grid grid-cols-2 gap-4 mb-6">
+                    <div
+                      class="bg-black/30 rounded-lg p-4 border border-red-500/30"
+                    >
+                      <p class="text-gray-400 text-sm mb-1">Prize Pool</p>
+                      <p class="text-2xl font-bold text-red-400">$180K</p>
+                    </div>
+                    <div
+                      class="bg-black/30 rounded-lg p-4 border border-red-500/30"
+                    >
+                      <p class="text-gray-400 text-sm mb-1">Region</p>
+                      <p class="text-2xl font-bold text-white">NA</p>
+                    </div>
+                  </div>
+                  <button
+                    class="w-full bg-red-500 btn-shine text-white px-6 py-4 rounded-lg font-bold text-lg hover:bg-red-600 transition-all flex items-center justify-center cursor-pointer"
+                  >
+                    <i class="fa-solid fa-play mr-2"></i>Watch Live Stream
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content hidden" id="completed-content">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+              <div
+                class="bg-gray-800 rounded-2xl overflow-hidden border border-gray-700"
+              >
+                <div class="relative h-48">
+                  <img
+                    class="w-full h-full object-cover"
+                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/6793f9f87e-2cada1546a4c395e5743.png"
+                    alt="valorant masters"
+                  />
+                  <div
+                    class="absolute top-4 left-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-bold"
+                  >
+                    Completed
+                  </div>
+                  <div
+                    class="absolute inset-0 bg-linear-to-t from-black/60 to-transparent"
+                  ></div>
+                  <div class="absolute bottom-4 left-4 right-4">
+                    <h4 class="text-xl font-bold text-white mb-1">
+                      VALORANT Masters
+                    </h4>
+                    <p class="text-gray-300 text-sm">October 15, 2024</p>
+                  </div>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center justify-between mb-4">
+                    <div>
+                      <p class="text-primary font-bold text-lg">
+                        Winner: Team Phantom
+                      </p>
+                      <p class="text-gray-400 text-sm">$400K Prize Pool</p>
+                    </div>
+                    <div class="text-right">
+                      <p class="text-2xl font-bold">64</p>
+                      <p class="text-gray-400 text-sm">Teams</p>
+                    </div>
+                  </div>
+                  <div class="space-y-2 mb-6">
+                    <div class="flex justify-between items-center text-sm">
+                      <span class="text-gray-400">🥇 Team Phantom</span>
+                      <span class="text-primary font-bold">$200K</span>
+                    </div>
+                    <div class="flex justify-between items-center text-sm">
+                      <span class="text-gray-400">🥈 Team Nova</span>
+                      <span class="text-gray-300">$100K</span>
+                    </div>
+                    <div class="flex justify-between items-center text-sm">
+                      <span class="text-gray-400">🥉 Team Viper</span>
+                      <span class="text-gray-300">$50K</span>
+                    </div>
+                  </div>
+                  <button
+                    class="w-full bg-gray-700 hover:bg-gray-600 text-light px-4 py-3 rounded-lg font-bold transition-all cursor-pointer"
+                  >
+                    View Full Results
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="bg-gray-800 rounded-2xl overflow-hidden border border-gray-700"
+              >
+                <div class="relative h-48">
+                  <img
+                    class="w-full h-full object-cover"
+                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/48d1a8c08e-5e6300701ef0cff6e68d.png"
+                    alt="lol summer finals"
+                  />
+                  <div
+                    class="absolute top-4 left-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-bold"
+                  >
+                    Completed
+                  </div>
+                  <div
+                    class="absolute inset-0 bg-linear-to-t from-black/60 to-transparent"
+                  ></div>
+                  <div class="absolute bottom-4 left-4 right-4">
+                    <h4 class="text-xl font-bold text-white mb-1">
+                      LoL Summer Finals
+                    </h4>
+                    <p class="text-gray-300 text-sm">September 28, 2024</p>
+                  </div>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center justify-between mb-4">
+                    <div>
+                      <p class="text-primary font-bold text-lg">
+                        Winner: Team Nova
+                      </p>
+                      <p class="text-gray-400 text-sm">$600K Prize Pool</p>
+                    </div>
+                    <div class="text-right">
+                      <p class="text-2xl font-bold">32</p>
+                      <p class="text-gray-400 text-sm">Teams</p>
+                    </div>
+                  </div>
+                  <div class="space-y-2 mb-6">
+                    <div class="flex justify-between items-center text-sm">
+                      <span class="text-gray-400">🥇 Team Nova</span>
+                      <span class="text-primary font-bold">$300K</span>
+                    </div>
+                    <div class="flex justify-between items-center text-sm">
+                      <span class="text-gray-400">🥈 Team Storm</span>
+                      <span class="text-gray-300">$150K</span>
+                    </div>
+                    <div class="flex justify-between items-center text-sm">
+                      <span class="text-gray-400">🥉 Team Titan</span>
+                      <span class="text-gray-300">$75K</span>
+                    </div>
+                  </div>
+                  <button
+                    class="w-full bg-gray-700 hover:bg-gray-600 text-light px-4 py-3 rounded-lg font-bold transition-all cursor-pointer"
+                  >
+                    View Full Results
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="bg-gray-800 rounded-2xl overflow-hidden border border-gray-700"
+              >
+                <div class="relative h-48">
+                  <img
+                    class="w-full h-full object-cover"
+                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/7f79925235-3e9e23129449576e0015.png"
+                    alt="cs go major berlin"
+                  />
+                  <div
+                    class="absolute top-4 left-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-bold"
+                  >
+                    Completed
+                  </div>
+                  <div
+                    class="absolute inset-0 bg-linear-to-t from-black/60 to-transparent"
+                  ></div>
+                  <div class="absolute bottom-4 left-4 right-4">
+                    <h4 class="text-xl font-bold text-white mb-1">
+                      CS:GO Major Berlin
+                    </h4>
+                    <p class="text-gray-300 text-sm">August 20, 2024</p>
+                  </div>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center justify-between mb-4">
+                    <div>
+                      <p class="text-primary font-bold text-lg">
+                        Winner: Team Viper
+                      </p>
+                      <p class="text-gray-400 text-sm">$1M Prize Pool</p>
+                    </div>
+                    <div class="text-right">
+                      <p class="text-2xl font-bold">24</p>
+                      <p class="text-gray-400 text-sm">Teams</p>
+                    </div>
+                  </div>
+                  <div class="space-y-2 mb-6">
+                    <div class="flex justify-between items-center text-sm">
+                      <span class="text-gray-400">🥇 Team Viper</span>
+                      <span class="text-primary font-bold">$500K</span>
+                    </div>
+                    <div class="flex justify-between items-center text-sm">
+                      <span class="text-gray-400">🥈 Team Ghost</span>
+                      <span class="text-gray-300">$250K</span>
+                    </div>
+                    <div class="flex justify-between items-center text-sm">
+                      <span class="text-gray-400">🥉 Team Phoenix</span>
+                      <span class="text-gray-300">$125K</span>
+                    </div>
+                  </div>
+                  <button
+                    class="w-full bg-gray-700 hover:bg-gray-600 text-light px-4 py-3 rounded-lg font-bold transition-all cursor-pointer"
+                  >
+                    View Full Results
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMPONENT: Contact Section -->
+      <section id="contact" class="py-24 bg-linear-to-br from-gray-900 to-dark">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="text-center mb-16">
+            <p
+              class="text-primary font-bold tracking-[0.2em] mb-4 relative inline-block before:content-[''] before:absolute before:left-[-80px] before:top-1/2 before:-translate-y-1/2 before:w-16 before:h-[2px] before:bg-linear-to-r before:from-transparent before:via-primary before:to-primary after:content-[''] after:absolute after:right-[-80px] after:top-1/2 after:-translate-y-1/2 after:w-16 after:h-[2px] after:bg-linear-to-l after:from-transparent after:via-primary after:to-primary"
+            >
+              CONTACT US
+            </p>
+            <h2 class="text-5xl font-bold">Get In Touch</h2>
+            <p class="text-xl text-gray-400 mt-6">
+              Have questions or need support? We're here to help!
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div class="space-y-8">
+              <div class="bg-gray-800 rounded-2xl p-8">
+                <div class="flex items-center space-x-6 mb-6">
+                  <div
+                    class="w-16 h-16 bg-primary rounded-full flex items-center justify-center"
+                  >
+                    <i
+                      class="fa-solid fa-map-marker-alt text-dark text-2xl"
+                    ></i>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-bold">Our Location</h3>
+                    <p class="text-gray-400">
+                      123 Gaming Street, Esports City, EC 12345
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-gray-800 rounded-2xl p-8">
+                <div class="flex items-center space-x-6 mb-6">
+                  <div
+                    class="w-16 h-16 bg-primary rounded-full flex items-center justify-center"
+                  >
+                    <i class="fa-solid fa-phone text-dark text-2xl"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-bold">Phone Number</h3>
+                    <p class="text-gray-400">+1 (555) 123-4567</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-gray-800 rounded-2xl p-8">
+                <div class="flex items-center space-x-6 mb-6">
+                  <div
+                    class="w-16 h-16 bg-primary rounded-full flex items-center justify-center"
+                  >
+                    <i class="fa-solid fa-envelope text-dark text-2xl"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-xl font-bold">Email Address</h3>
+                    <p class="text-gray-400">contact@gamearena.com</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="bg-linear-to-r from-primary to-green-400 rounded-2xl p-8 text-dark"
+              >
+                <h3 class="text-2xl font-bold mb-4">Join Our Community</h3>
+                <p class="mb-6">
+                  Connect with us on social media for the latest updates
+                </p>
+                <div class="flex space-x-4">
+                  <div
+                    class="w-12 h-12 bg-dark rounded-full flex items-center justify-center cursor-pointer hover:bg-dark/80 transition-all"
+                  >
+                    <i class="fa-brands fa-discord text-primary text-xl"></i>
+                  </div>
+                  <div
+                    class="w-12 h-12 bg-dark rounded-full flex items-center justify-center cursor-pointer hover:bg-dark/80 transition-all"
+                  >
+                    <i class="fa-brands fa-x-twitter text-primary text-xl"></i>
+                  </div>
+                  <div
+                    class="w-12 h-12 bg-dark rounded-full flex items-center justify-center cursor-pointer hover:bg-dark/80 transition-all"
+                  >
+                    <i class="fa-brands fa-instagram text-primary text-xl"></i>
+                  </div>
+                  <div
+                    class="w-12 h-12 bg-dark rounded-full flex items-center justify-center cursor-pointer hover:bg-dark/80 transition-all"
+                  >
+                    <i class="fa-brands fa-youtube text-primary text-xl"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-gray-800 rounded-2xl p-8">
+              <h3 class="text-2xl font-bold mb-6">Send us a Message</h3>
+              <form class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label class="block text-sm font-bold mb-2 text-gray-300"
+                      >First Name</label
+                    >
+                    <input
+                      type="text"
+                      class="w-full bg-gray-700 text-light px-4 py-3 rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                      placeholder="Your first name"
+                    />
+                  </div>
+                  <div>
+                    <label class="block text-sm font-bold mb-2 text-gray-300"
+                      >Last Name</label
+                    >
+                    <input
+                      type="text"
+                      class="w-full bg-gray-700 text-light px-4 py-3 rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                      placeholder="Your last name"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-sm font-bold mb-2 text-gray-300"
+                    >Email Address</label
+                  >
+                  <input
+                    type="email"
+                    class="w-full bg-gray-700 text-light px-4 py-3 rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                    placeholder="your.email@example.com"
+                  />
+                </div>
+
+                <div>
+                  <label class="block text-sm font-bold mb-2 text-gray-300"
+                    >Subject</label
+                  >
+                  <select
+                    class="w-full bg-gray-700 text-light px-4 py-3 rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                  >
+                    <option>General Inquiry</option>
+                    <option>Tournament Support</option>
+                    <option>Technical Issue</option>
+                    <option>Partnership</option>
+                    <option>Media Request</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label class="block text-sm font-bold mb-2 text-gray-300"
+                    >Message</label
+                  >
+                  <textarea
+                    rows="5"
+                    class="w-full bg-gray-700 text-light px-4 py-3 rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent resize-none"
+                    placeholder="Tell us how we can help you..."
+                  ></textarea>
+                </div>
+
+                <div class="flex items-center space-x-3">
+                  <input
+                    type="checkbox"
+                    id="newsletter"
+                    class="w-5 h-5 text-primary bg-gray-700 border-gray-600 rounded focus:ring-primary focus:ring-2"
+                  />
+                  <label for="newsletter" class="text-sm text-gray-400"
+                    >Subscribe to our newsletter for gaming updates</label
+                  >
+                </div>
+
+                <button
+                  type="submit"
+                  class="w-full btn-shine bg-primary text-dark px-6 py-4 rounded-lg font-bold text-lg hover:bg-primary/80 transition-all cursor-pointer"
+                >
+                  Send Message
+                  <i class="fa-solid fa-paper-plane ml-2"></i>
+                </button>
+              </form>
+
+              <div class="mt-8 pt-8 border-t border-gray-700">
+                <div class="grid grid-cols-2 gap-6 text-center">
+                  <div>
+                    <div class="text-2xl font-bold text-primary mb-1">24/7</div>
+                    <div class="text-sm text-gray-400">Support Available</div>
+                  </div>
+                  <div>
+                    <div class="text-2xl font-bold text-primary mb-1">
+                      &lt;1hr
+                    </div>
+                    <div class="text-sm text-gray-400">Average Response</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- COMPONENT: Footer -->
+    <footer id="footer" class="bg-black text-light py-12 md:py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8 md:mb-12"
+        >
+          <div>
+            <div class="text-primary text-xl font-bold mb-6">
+              <i class="fa-solid fa-gamepad mr-2"></i>
+              GameArena
+            </div>
+            <p class="text-gray-400 mb-6">
+              The ultimate destination for competitive gaming, esports
+              tournaments, and gaming community.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="https://x.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-gray-400 hover:text-primary text-xl cursor-pointer"
+              >
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-gray-400 hover:text-primary text-xl cursor-pointer"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-gray-400 hover:text-primary text-xl cursor-pointer"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-gray-400 hover:text-primary text-xl cursor-pointer"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+              <a
+                href="https://twitch.tv"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-gray-400 hover:text-primary text-xl cursor-pointer"
+              >
+                <i class="fa-brands fa-twitch"></i>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="text-xl font-bold mb-6">Games</h4>
+            <ul class="space-y-3 text-gray-400">
+              <li>
+                <a
+                  href="#latest-games"
+                  class="hover:text-primary cursor-pointer"
+                  >VALORANT</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#latest-games"
+                  class="hover:text-primary cursor-pointer"
+                  >League of Legends</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#latest-games"
+                  class="hover:text-primary cursor-pointer"
+                  >CS:GO</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#latest-games"
+                  class="hover:text-primary cursor-pointer"
+                  >Dota 2</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#latest-games"
+                  class="hover:text-primary cursor-pointer"
+                  >Apex Legends</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-xl font-bold mb-6">Tournaments</h4>
+            <ul class="space-y-3 text-gray-400">
+              <li>
+                <a href="#tournaments" class="hover:text-primary cursor-pointer"
+                  >Upcoming Events</a
+                >
+              </li>
+              <li>
+                <a href="#tournaments" class="hover:text-primary cursor-pointer"
+                  >Live Matches</a
+                >
+              </li>
+              <li>
+                <a href="#tournaments" class="hover:text-primary cursor-pointer"
+                  >Results</a
+                >
+              </li>
+              <li>
+                <a href="#tournaments" class="hover:text-primary cursor-pointer"
+                  >Rankings</a
+                >
+              </li>
+              <li>
+                <a href="#tournaments" class="hover:text-primary cursor-pointer"
+                  >Schedule</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-xl font-bold mb-6">Support</h4>
+            <ul class="space-y-3 text-gray-400">
+              <li>
+                <a href="#support" class="hover:text-primary cursor-pointer"
+                  >Help Center</a
+                >
+              </li>
+              <li>
+                <a href="#support" class="hover:text-primary cursor-pointer"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a href="#support" class="hover:text-primary cursor-pointer"
+                  >Bug Reports</a
+                >
+              </li>
+              <li>
+                <a href="#support" class="hover:text-primary cursor-pointer"
+                  >Feature Requests</a
+                >
+              </li>
+              <li>
+                <a href="#support" class="hover:text-primary cursor-pointer"
+                  >Community Guidelines</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-800 pt-8">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-400 mb-4 md:mb-0">
+              © 2025 GameArena. All rights reserved.
+            </p>
+            <div class="flex space-x-6 text-gray-400">
+              <a href="#privacy" class="hover:text-primary cursor-pointer"
+                >Privacy Policy</a
+              >
+              <a href="#terms" class="hover:text-primary cursor-pointer"
+                >Terms of Service</a
+              >
+              <a href="#cookies" class="hover:text-primary cursor-pointer"
+                >Cookie Policy</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script defer src="./js/index-CweXGykB.js"></script>
+  </body>
+</html>

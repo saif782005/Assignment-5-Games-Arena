@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0e13" />
+    <title>Sign In | GameArena</title>
+    <link rel="icon" href="./favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Days+One&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/index-J_tkNP06.css" />
+    <link rel="stylesheet" href="./css/sign-in.css" />
+  </head>
+  <body class="signin-page">
+    <main class="signin-layout">
+      <a class="signin-brand" href="./index.html" aria-label="GameArena home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M7.3 7.2h9.4a4 4 0 0 1 3.8 2.8l1.1 3.6a2.4 2.4 0 0 1-3.8 2.6l-2.5-1.9H8.7l-2.5 1.9a2.4 2.4 0 0 1-3.8-2.6l1.1-3.6a4 4 0 0 1 3.8-2.8Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 9.8v4M6 11.8h4m5.4-.8h.1m2.2 2h.1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </span>
+        <span>Game<span>Arena</span></span>
+      </a>
+
+      <section class="signin-card" aria-label="Sign in to GameArena">
+        <aside class="signin-feature">
+          <div class="feature-glow" aria-hidden="true"></div>
+          <div class="feature-content">
+            <p class="feature-kicker"><span></span> YOUR NEXT MATCH STARTS HERE</p>
+            <h1>Welcome back,<br /><em>player.</em></h1>
+            <p class="feature-description">Get back to your squad, track your tournaments, and keep your next win in sight.</p>
+            <div class="feature-status"><span class="status-pulse"></span><span>THE ARENA IS LIVE</span><span class="status-divider"></span><span>READY WHEN YOU ARE</span></div>
+          </div>
+          <div class="feature-bottom"><span>GAMEARENA COMMUNITY</span><span>PLAY. COMPETE. REPEAT.</span></div>
+        </aside>
+
+        <div class="signin-form-panel">
+          <a class="mobile-brand" href="./index.html" aria-label="GameArena home">
+            <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M7.3 7.2h9.4a4 4 0 0 1 3.8 2.8l1.1 3.6a2.4 2.4 0 0 1-3.8 2.6l-2.5-1.9H8.7l-2.5 1.9a2.4 2.4 0 0 1-3.8-2.6l1.1-3.6a4 4 0 0 1 3.8-2.8Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 9.8v4M6 11.8h4m5.4-.8h.1m2.2 2h.1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+            <span>Game<span>Arena</span></span>
+          </a>
+          <div class="form-heading">
+            <p class="form-eyebrow">PLAYER ACCESS</p>
+            <h2>Sign in</h2>
+            <p>Enter your details to get back in the game.</p>
+          </div>
+
+          <form id="signin-form" novalidate>
+            <label class="field-label" for="email">Email address</label>
+            <div class="input-wrap">
+              <svg class="input-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="2.5" stroke="currentColor" stroke-width="1.6"/><path d="m5 7 7 5.5L19 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required />
+            </div>
+
+            <div class="password-label-row">
+              <label class="field-label" for="password">Password</label>
+              <button class="text-link" id="forgot-password" type="button">Forgot password?</button>
+            </div>
+            <div class="input-wrap">
+              <svg class="input-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4.5" y="10" width="15" height="10" rx="2.2" stroke="currentColor" stroke-width="1.6"/><path d="M8 10V7.5a4 4 0 1 1 8 0V10m-4 4v2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              <input id="password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" required />
+              <button class="password-toggle" id="toggle-password" type="button" aria-label="Show password" aria-pressed="false">
+                <svg class="eye-open" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M2.5 12s3.3-6 9.5-6 9.5 6 9.5 6-3.3 6-9.5 6-9.5-6-9.5-6Z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="2.6" stroke="currentColor" stroke-width="1.6"/></svg>
+                <svg class="eye-closed" viewBox="0 0 24 24" fill="none" aria-hidden="true" hidden><path d="m3 3 18 18M10.6 6.2c.5-.1.9-.2 1.4-.2 6.2 0 9.5 6 9.5 6a16 16 0 0 1-3 3.5M6.2 6.2C3.8 7.7 2.5 12 2.5 12s3.3 6 9.5 6c.9 0 1.7-.1 2.4-.4M9.9 9.9a3 3 0 0 0 4.2 4.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+
+            <div class="form-options">
+              <label class="remember-option"><input type="checkbox" name="remember" /><span class="custom-check"></span><span>Keep me signed in</span></label>
+            </div>
+
+            <button class="signin-submit" type="submit">Sign in to GameArena <span aria-hidden="true">→</span></button>
+            <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="form-divider"><span>SECURE PLAYER ACCESS</span></div>
+          <p class="account-switch">New to GameArena? <a href="./sign-up.html">Create an account</a></p>
+          <a class="back-home" href="./index.html"><span aria-hidden="true">←</span> Back to GameArena</a>
+          <p class="signin-legal">By continuing, you agree to play fair and respect the community.</p>
+        </div>
+      </section>
+      <p class="page-copyright">© 2025 GameArena <span>•</span> BUILT FOR PLAYERS</p>
+    </main>
+    <script defer src="./js/sign-in.js"></script>
+  </body>
+</html>

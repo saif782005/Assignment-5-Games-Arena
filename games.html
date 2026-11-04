@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0e13" />
+    <title>All Games | GameArena</title>
+    <link rel="icon" href="./favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Days+One&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/index-J_tkNP06.css" />
+    <link rel="stylesheet" href="./css/games.css" />
+  </head>
+  <body class="games-page">
+    <header class="games-header">
+      <a class="games-brand" href="./index.html" aria-label="GameArena home">
+        <span class="games-brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M7.3 7.2h9.4a4 4 0 0 1 3.8 2.8l1.1 3.6a2.4 2.4 0 0 1-3.8 2.6l-2.5-1.9H8.7l-2.5 1.9a2.4 2.4 0 0 1-3.8-2.6l1.1-3.6a4 4 0 0 1 3.8-2.8Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 9.8v4M6 11.8h4m5.4-.8h.1m2.2 2h.1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+        <span>Game<span>Arena</span></span>
+      </a>
+      <a class="games-back-link" href="./index.html"><span aria-hidden="true">←</span> Back to home</a>
+    </header>
+
+    <main class="games-main">
+      <section class="games-intro">
+        <p class="games-eyebrow"><span></span> THE GAME LIBRARY</p>
+        <h1>Find your <em>next game.</em></h1>
+        <p class="games-subtitle">Explore the GameArena collection and pick your next adventure.</p>
+      </section>
+
+      <section class="game-browser" aria-label="Browse games">
+        <div class="browser-toolbar">
+          <div class="game-count" id="game-count" aria-live="polite"><strong>9</strong> games in the arena</div>
+          <label class="game-search">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <input id="game-search" type="search" placeholder="Search games..." aria-label="Search games" />
+            <kbd>/</kbd>
+          </label>
+        </div>
+        <div class="game-filters" role="group" aria-label="Filter games by genre">
+          <button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true">All games</button>
+          <button class="filter-chip" type="button" data-filter="adventure" aria-pressed="false">Adventure</button>
+          <button class="filter-chip" type="button" data-filter="racing" aria-pressed="false">Racing</button>
+          <button class="filter-chip" type="button" data-filter="action" aria-pressed="false">Action</button>
+          <button class="filter-chip" type="button" data-filter="rpg" aria-pressed="false">RPG</button>
+          <button class="filter-chip" type="button" data-filter="shooter" aria-pressed="false">Shooter</button>
+          <button class="filter-chip" type="button" data-filter="sports" aria-pressed="false">Sports</button>
+          <button class="filter-chip" type="button" data-filter="space" aria-pressed="false">Space</button>
+        </div>
+
+        <div class="games-grid" id="games-grid">
+          <article class="game-card" data-category="adventure" data-search="alien companions adventure multiplayer sci-fi">
+            <div class="game-art"><img src="./imges/latest-games-1-CfV33bjK.png" alt="Two alien companions on a planet beneath a green nebula" loading="lazy" /><span class="game-art-index">01</span><span class="game-art-glow"></span></div>
+            <div class="game-info"><div class="game-tags"><span>ADVENTURE</span><span>MULTIPLAYER</span></div><h2>Alien Companions</h2><p>Team up, explore a strange new world, and see what waits beyond the stars.</p><a href="./index.html#latest-games" class="game-card-link">Explore game <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="game-card" data-category="racing" data-search="cyber run 2099 racing sci-fi cars">
+            <div class="game-art"><img src="./imges/latest-games-2-DcGt1MOH.png" alt="A futuristic hover car racing through a neon data tunnel" loading="lazy" /><span class="game-art-index">02</span><span class="game-art-glow"></span></div>
+            <div class="game-info"><div class="game-tags"><span>RACING</span><span>SCI-FI</span></div><h2>Cyber Run 2099</h2><p>Push the limit through a high-speed future where every second counts.</p><a href="./index.html#latest-games" class="game-card-link">Explore game <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="game-card" data-category="action" data-search="the legend of zelda tears of the kingdom action fantasy">
+            <div class="game-art"><img src="./imges/latest-games-3-3PuaZ95E.png" alt="An enormous alien mothership above a lush green planet" loading="lazy" /><span class="game-art-index">03</span><span class="game-art-glow"></span></div>
+            <div class="game-info"><div class="game-tags"><span>ACTION</span><span>GEFORCE</span></div><h2>The Legend of Zelda: Tears of the Kingdom</h2><p>Take on an epic journey through a world full of secrets and unexpected skies.</p><a href="./index.html#latest-games" class="game-card-link">Explore game <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="game-card" data-category="rpg" data-search="aetheria chronicles rpg fantasy role playing">
+            <div class="game-art"><img src="./imges/latest-games-4-DCWGKdgP.png" alt="A knight overlooking a fantasy landscape with floating islands" loading="lazy" /><span class="game-art-index">04</span><span class="game-art-glow"></span></div>
+            <div class="game-info"><div class="game-tags"><span>RPG</span><span>FANTASY</span></div><h2>Aetheria Chronicles</h2><p>Carve your own path through a fantasy realm shaped by your choices.</p><a href="./index.html#latest-games" class="game-card-link">Explore game <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="game-card" data-category="shooter" data-search="warfront protocol shooter co-op combat">
+            <div class="game-art"><img src="./imges/latest-games-5-D0uhM4CW.png" alt="A team of soldiers in tactical gear in a futuristic city" loading="lazy" /><span class="game-art-index">05</span><span class="game-art-glow"></span></div>
+            <div class="game-info"><div class="game-tags"><span>SHOOTER</span><span>CO-OP</span></div><h2>Warfront Protocol</h2><p>Coordinate with your squad and fight through a city on the edge.</p><a href="./index.html#latest-games" class="game-card-link">Explore game <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="game-card" data-category="sports" data-search="shot striker football fantasy sports">
+            <div class="game-art"><img src="./imges/latest-games-6-CJaIm3nW.png" alt="A vibrant alien landscape from Shot Striker" loading="lazy" /><span class="game-art-index">06</span><span class="game-art-glow"></span></div>
+            <div class="game-info"><div class="game-tags"><span>FOOTBALL</span><span>FANTASY</span></div><h2>Shot Striker</h2><p>Bring your best lineup and make every shot count on the field.</p><a href="./index.html#latest-games" class="game-card-link">Explore game <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="game-card" data-category="sports" data-search="epic gaming league sports competition">
+            <div class="game-art"><img src="./imges/latest-games-7-C9aSwQWa.png" alt="A futuristic racing scene for Epic Gaming League" loading="lazy" /><span class="game-art-index">07</span><span class="game-art-glow"></span></div>
+            <div class="game-info"><div class="game-tags"><span>SPORTS</span><span>LEAGUE</span></div><h2>Epic Gaming League</h2><p>Step into the spotlight, compete with the best, and climb the standings.</p><a href="./index.html#latest-games" class="game-card-link">Explore game <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="game-card" data-category="space" data-search="barren alien worlds space exploration">
+            <div class="game-art"><img src="./imges/latest-games-8-CDS2WV4Q.png" alt="A massive mothership over a green planet with smaller ships nearby" loading="lazy" /><span class="game-art-index">08</span><span class="game-art-glow"></span></div>
+            <div class="game-info"><div class="game-tags"><span>SPACE</span><span>EXPLORATION</span></div><h2>Barren Alien Worlds</h2><p>Chart a course through distant systems and discover what lies out there.</p><a href="./index.html#latest-games" class="game-card-link">Explore game <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="game-card" data-category="action" data-search="cloveland quest action futuristic adventure">
+            <div class="game-art"><img src="./imges/latest-games-9-BhBeVXRH.png" alt="A futuristic armored knight overlooking a fantasy landscape" loading="lazy" /><span class="game-art-index">09</span><span class="game-art-glow"></span></div>
+            <div class="game-info"><div class="game-tags"><span>ACTION</span><span>FUTURISTIC</span></div><h2>Cloveland Quest</h2><p>Take up your gear and set out on a bold quest across an unknown land.</p><a href="./index.html#latest-games" class="game-card-link">Explore game <span aria-hidden="true">↗</span></a></div>
+          </article>
+        </div>
+        <div class="games-empty" id="games-empty" hidden><span aria-hidden="true">⌕</span><h2>No games found</h2><p>Try another title or choose a different genre.</p></div>
+      </section>
+      <section class="games-cta"><div><p class="games-eyebrow"><span></span> FIND YOUR PEOPLE</p><h2>Ready to play?</h2><p>Jump back into the arena and meet your next squad.</p></div><a href="./index.html#team-members">Meet the team <span aria-hidden="true">→</span></a></section>
+    </main>
+    <footer class="games-footer"><a href="./index.html">GameArena</a><span>© 2025 GameArena</span></footer>
+    <script defer src="./js/games.js"></script>
+  </body>
+</html>
